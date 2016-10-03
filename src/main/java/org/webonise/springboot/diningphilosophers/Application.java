@@ -18,7 +18,7 @@ public class Application {
     private final ReentrantLock[] chopsticks;
 
     @Autowired
-    ThreadPoolExecutor threadPoolExecutor;
+    private ThreadPoolExecutor threadPoolExecutor;
 
     @Autowired
     Application(@Qualifier("philosophers") Philosopher[] philosophers, @Qualifier("reentrantLocks") ReentrantLock[] reentrantLocks) {

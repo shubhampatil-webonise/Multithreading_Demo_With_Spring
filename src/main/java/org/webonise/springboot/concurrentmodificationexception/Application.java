@@ -16,10 +16,10 @@ public class Application {
     private static final Logger logger = Logger.getLogger(Application.class.getName());
 
     @Autowired
-    ThreadPoolExecutor threadPoolExecutor;
+    private ThreadPoolExecutor threadPoolExecutor;
 
     @Autowired
-    WorkerThread workerThread;
+    private WorkerThread workerThread;
 
     @Autowired
     public Application(ArrayList<Integer> list) {

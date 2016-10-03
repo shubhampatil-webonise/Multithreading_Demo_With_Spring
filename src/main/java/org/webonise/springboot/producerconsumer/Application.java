@@ -18,20 +18,19 @@ public class Application {
     private ThreadPoolExecutor threadPoolExecutor;
 
     @Autowired
-    Producer producer;
+    private Producer producer;
 
     @Autowired
-    Consumer firstConsumer;
+    private Consumer firstConsumer;
 
     @Autowired
-    Consumer secondConsumer;
+    private Consumer secondConsumer;
 
     @Autowired
-    public Application(LinkedList<Integer> linkedList) {
+    public Application(final LinkedList<Integer> linkedList) {
         this.queue = linkedList;
     }
-
-
+    
     public void start() {
         threadPoolExecutor.execute(producer);
         threadPoolExecutor.execute(firstConsumer);

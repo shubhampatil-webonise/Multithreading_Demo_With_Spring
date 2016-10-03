@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Main implements CommandLineRunner {
     @Autowired
-    Application application;
+    private Application application;
 
     @Override
     public void run(String... strings) throws Exception {

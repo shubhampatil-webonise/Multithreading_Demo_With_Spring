@@ -16,10 +16,10 @@ public class Application {
     private final List<Integer> list;
 
     @Autowired
-    ThreadPoolExecutor threadPoolExecutor;
+    private ThreadPoolExecutor threadPoolExecutor;
 
     @Autowired
-    WorkerThread workerThread;
+    private WorkerThread workerThread;
 
     @Autowired
     public Application(CopyOnWriteArrayList<Integer> list) {
