@@ -10,10 +10,10 @@ import java.util.concurrent.TimeUnit;
 public class Application {
 
     @Autowired
-    Runnable runnable;
+    private Runnable runnable;
 
     @Autowired
-    ThreadPoolExecutor threadPoolExecutor;
+    private ThreadPoolExecutor threadPoolExecutor;
 
 
     public void start() {

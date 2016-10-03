@@ -1,4 +1,4 @@
-package org.webonise.springboot.threadinterruption;
+package org.webonise.springboot.waitandnotify;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
